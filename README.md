@@ -15,20 +15,20 @@
  
 ### 1. *RESTARTING THE DEBUGGER AUTOMATICALLY AFTER EDITING APPLICATION*
 
-	- To do this step you need to:
-	
-	1. Go to Debug/Add Configuration in VS Code
-	
-	2. Go to launch.json and write lines of code:
-	
-	   - "restart": true
-	   - "runtimeExecutable": "nodemon"
-	   - "console": "integratedTerminal"
-	   
-	3. In terminal write:
+- To do this step you need to:
 
-	   - npm install nodemon -g (Windows)   
-	   - sudo npm install nodemon -g (Mac and Linux) 
+1. Go to Debug/Add Configuration in VS Code
+
+2. Go to launch.json and write lines of code:
+
+   - "restart": true
+   - "runtimeExecutable": "nodemon"
+   - "console": "integratedTerminal"
+   
+3. In terminal write:
+
+   - npm install nodemon -g (Windows)   
+   - sudo npm install nodemon -g (Mac and Linux) 
    
 
 ### 2. *INSTALLING Express.js* 
