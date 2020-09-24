@@ -1,0 +1,29 @@
+{
+  "name": "node.js-exercises_rest_api",
+  "version": "1.0.0",
+  "description": "📝 This repository contains NodeJS exercises followed through Udemy course on topic ''NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)''",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/merima98/Node.js-exercises_REST_API.git"
+  },
+  "author": "Merima Ćeranić",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/merima98/Node.js-exercises_REST_API/issues"
+  },
+  "homepage": "https://github.com/merima98/Node.js-exercises_REST_API#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "body": "^5.1.0",
+    "custom-env": "^2.0.1",
+    "express": "^4.17.1",
+    "parser": "^0.1.4"
+  }
+}
