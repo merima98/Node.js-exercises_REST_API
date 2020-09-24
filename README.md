@@ -13,7 +13,7 @@
 	- Nodemon is a tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected.
 
  
-1. *RESTARTING THE DEBUGGER AUTOMATICALLY AFTER EDITING APPLICATION*
+### 1. *RESTARTING THE DEBUGGER AUTOMATICALLY AFTER EDITING APPLICATION*
 
 	- To do this step you need to:
 	
@@ -31,7 +31,7 @@
 	   - sudo npm install nodemon -g (Mac and Linux) 
    
 
-2. *INSTALLING Express.js* 
+### 2. *INSTALLING Express.js* 
 
 - For installation it is necessary to run the following command through the terminal:
 
@@ -44,7 +44,7 @@
   2. const  app = express();
  
   
-3. *PARSING INCOMING REQUESTS*
+### 3. *PARSING INCOMING REQUESTS*
  
 - For parsing incoming requests do next steps:
   
@@ -57,7 +57,7 @@
      - app.use(bodyParser.json());
 	 
 
-4. *WORKING WITH ENVIRONMENT VARIABLES*
+### 4. *WORKING WITH ENVIRONMENT VARIABLES*
 
 - Write *npm i custom-env* in the terminal. 
 - For including write *const env = require('custom-env').env();*
