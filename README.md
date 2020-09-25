@@ -1,7 +1,7 @@
 # Node.js - exercises REST API
 📝 This repository contains NodeJS exercises followed through Udemy course on topic ''NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)''
 
-## NOTE: Make shure to pull projects from [Node.js-exercises_REST_API](https://github.com/merima98/Node.js-exercises_REST_API) and [React.js-exercises](https://github.com/merima98/React.js-exercises) repositories! 
+## NOTE: Make sure to pull projects from [Node.js-exercises_REST_API](https://github.com/merima98/Node.js-exercises_REST_API) and [React.js-exercises](https://github.com/merima98/React.js-exercises) repositories! 
  
 
 ### Phase 1 :: Working with REST APIs
