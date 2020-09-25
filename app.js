@@ -6,6 +6,8 @@ const mongoose = require('mongoose');
 
 const feetRoutes = require('./routes/feed');
 
+const MONGODB_URI = process.env.MONGODB_URI;
+
 const app = express();
 
 app.use(bodyParser.json()); //application/json
@@ -20,7 +22,7 @@ app.use((req, res, next) => {
 app.use('/feed', feetRoutes);
 
 mongoose.connect(
-    'mongodb+srv://merima98:merima1998@cluster0.w4ehk.mongodb.net/messages'
+    MONGODB_URI
 )
     .then(result => {
         app.listen(process.env.PORT);
