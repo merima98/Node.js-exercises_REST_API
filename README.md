@@ -61,6 +61,11 @@
 
 - Write *npm i custom-env* in the terminal. 
 - For including write *const env = require('custom-env').env();*
+
+### 5. *ADDING SERVER SIDE VALIDATION*
+
+- Write *npm install --save express-validator* in the terminal. This package helps in implementing validation.
+
 	 
  
 	
