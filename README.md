@@ -66,6 +66,10 @@
 
 - Write *npm install --save express-validator* in the terminal. This package helps in implementing validation.
 
+### 6. *WORKING WITH THE DATABASE*
+
+- Write: *npm install --save mongoose* in the terminal to be able working with the database.
+
 	 
  
 	
