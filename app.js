@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const env = require('custom-env').env();
+const mongoose = require('mongoose');
 
 
 const feetRoutes = require('./routes/feed');
@@ -18,4 +19,12 @@ app.use((req, res, next) => {
 
 app.use('/feed', feetRoutes);
 
-app.listen(process.env.PORT);
+mongoose.connect(
+    'mongodb+srv://merima98:merima1998@cluster0.w4ehk.mongodb.net/messages'
+)
+    .then(result => {
+        app.listen(process.env.PORT);
+    })
+    .catch(err => {
+        console.log(err)
+    });
