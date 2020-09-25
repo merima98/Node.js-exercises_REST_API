@@ -24,6 +24,7 @@
     "body": "^5.1.0",
     "custom-env": "^2.0.1",
     "express": "^4.17.1",
+    "express-validator": "^6.6.1",
     "parser": "^0.1.4"
   }
 }
