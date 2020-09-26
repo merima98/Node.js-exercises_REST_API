@@ -70,6 +70,16 @@
 
 - Write: *npm install --save mongoose* in the terminal to be able working with the database.
 
+### 6. *UPLOADING IMAGES*
+
+- Write *npm install --save uuid * and *npm install --save multer* in the terminal. 
+- Add *cb(null, uuidv4() + '-' + file.originalname);* in app.js and include *const { v4: uuidv4 } = require('uuid');* also in app.js. //WindowsUsers
+- Add *const imageUrl = req.file.path.replace("\\", "/");*  //WindowsUsers
+
+
+
+
+
 	 
  
 	
