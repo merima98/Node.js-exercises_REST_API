@@ -1,7 +1,7 @@
 # Node.js - exercises REST API
 📝 This repository contains NodeJS exercises followed through Udemy course on topic ''NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)''
 
-## NOTE: Make sure to pull projects from [Node.js-exercises_REST_API](https://github.com/merima98/Node.js-exercises_REST_API) and [React.js-exercises](https://github.com/merima98/React.js-exercises) repositories! 
+### NOTE: Make sure to pull projects from [Node.js-exercises_REST_API](https://github.com/merima98/Node.js-exercises_REST_API) and [React.js-exercises](https://github.com/merima98/React.js-exercises) repositories! 
  
 
 ### Phase 1 :: Working with REST APIs
@@ -75,6 +75,12 @@
 - Write *npm install --save uuid * and *npm install --save multer* in the terminal. 
 - Add *cb(null, uuidv4() + '-' + file.originalname);* in app.js and include *const { v4: uuidv4 } = require('uuid');* also in app.js. //WindowsUsers
 - Add *const imageUrl = req.file.path.replace("\\", "/");*  //WindowsUsers
+
+### 6. *WORKING WITH AUTHENTICATION*
+
+- Write *npm install --save bcryptjs * in the terminal. This helps to hash password in the secure way.
+- Write *npm install --save jsonwebtoken * in the terminal. This enables working with Json Web Token.
+  
 
 
 
