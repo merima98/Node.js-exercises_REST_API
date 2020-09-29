@@ -8,6 +8,7 @@ const multer = require('multer');
 const { v4: uuidv4 } = require('uuid');
 
 const feetRoutes = require('./routes/feed');
+const authRoutes = require('./routes/auth');
 
 const MONGODB_URI = process.env.MONGODB_URI;
 
@@ -44,12 +45,15 @@ app.use((req, res, next) => {
 });
 
 app.use('/feed', feetRoutes);
+app.use('/auth', authRoutes);
 app.use((error, req, res, next) => {
     console.log(error);
     const status = error.statusCode || 500;
     const message = error.message;
+    const data = error.data;
     res.status(status).json({
-        message: message
+        message: message,
+        data: data
     });
 });
 
