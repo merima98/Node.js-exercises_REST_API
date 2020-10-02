@@ -80,6 +80,12 @@
 
 - Write *npm install --save bcryptjs * in the terminal. This helps to hash password in the secure way.
 - Write *npm install --save jsonwebtoken * in the terminal. This enables working with Json Web Token.
+
+### 7. *WORKING WITH WEBSOCKETD & Socket.io*
+
+- Write *npm install --save socket.io* in the terminal. Enables implemmenting web sockets - protocol that allows user to push data from the server to connected client.
+
+
   
 
 
