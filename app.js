@@ -7,8 +7,9 @@ const multer = require('multer');
 // const { uuidv4 } = require('uuid');
 const { v4: uuidv4 } = require('uuid');
 
-const feetRoutes = require('./routes/feed');
-const authRoutes = require('./routes/auth');
+const graphqlHTTP = require('express-graphql').graphqlHTTP;
+const graphqlSchema = require('./graphql/schema');
+const graphqlResolver = require('./graphql/resolvers');
 
 const MONGODB_URI = process.env.MONGODB_URI;
 
@@ -47,8 +48,11 @@ app.use((req, res, next) => {
     next();
 });
 
-app.use('/feed', feetRoutes);
-app.use('/auth', authRoutes);
+app.use('/graphql', graphqlHTTP({
+    schema: graphqlSchema,
+    rootValue: graphqlResolver
+}));
+
 
 app.use((error, req, res, next) => {
     console.log(error);
@@ -65,12 +69,7 @@ mongoose.connect(
     MONGODB_URI
 )
     .then(result => {
-        const server = app.listen(process.env.PORT);
-        const io = require('./socket').init(server);
-        io.on('connection', socket => {
-            console.log('Client conneceted!');
-        });
-
+        app.listen(process.env.PORT);
     })
     .catch(err => {
         console.log(err)
