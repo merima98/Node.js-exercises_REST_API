@@ -49,6 +49,7 @@ app.use((req, res, next) => {
 
 app.use('/feed', feetRoutes);
 app.use('/auth', authRoutes);
+
 app.use((error, req, res, next) => {
     console.log(error);
     const status = error.statusCode || 500;
@@ -64,7 +65,12 @@ mongoose.connect(
     MONGODB_URI
 )
     .then(result => {
-        app.listen(process.env.PORT);
+        const server = app.listen(process.env.PORT);
+        const io = require('socket.io')(server);
+        io.on('connection', socket => {
+            console.log('Client conneceted!');
+        });
+
     })
     .catch(err => {
         console.log(err)
