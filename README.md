@@ -85,6 +85,10 @@
 
 - Write *npm install --save socket.io* in the terminal. Enables implemmenting web sockets - protocol that allows user to push data from the server to connected client.
 
+### 8. *WORKING WITH GraphQL*
+
+- Write *npm install --save graphql express-graphql* in the terminal, to be enabled working with GraphQL.
+
 
   
 
