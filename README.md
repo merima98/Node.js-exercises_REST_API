@@ -88,6 +88,8 @@
 ### 8. *WORKING WITH GraphQL*
 
 - Write *npm install --save graphql express-graphql* in the terminal, to be enabled working with GraphQL.
+- Write *npm install --save validator* in the terminal, to be enabled working with validation.
+
 
 
   
