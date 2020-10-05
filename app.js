@@ -10,6 +10,7 @@ const { v4: uuidv4 } = require('uuid');
 const graphqlHTTP = require('express-graphql').graphqlHTTP;
 const graphqlSchema = require('./graphql/schema');
 const graphqlResolver = require('./graphql/resolvers');
+const auth = require('./middleware/auth');
 
 const MONGODB_URI = process.env.MONGODB_URI;
 
@@ -50,6 +51,8 @@ app.use((req, res, next) => {
     }
     next();
 });
+
+app.use(auth);
 
 app.use('/graphql', graphqlHTTP({
     schema: graphqlSchema,
