@@ -1,4 +1,8 @@
 # Node.js - exercises REST API
+
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+
+
 📝 This repository contains NodeJS exercises followed through Udemy course on topic ''NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)''
 
 ### NOTE: Make sure to pull projects from [Node.js-exercises_REST_API](https://github.com/merima98/Node.js-exercises_REST_API) and [React.js-exercises](https://github.com/merima98/React.js-exercises) repositories! 
@@ -21,28 +25,28 @@
 
 2. Go to launch.json and write lines of code:
 
-   - "restart": true
-   - "runtimeExecutable": "nodemon"
-   - "console": "integratedTerminal"
+	   - "restart": true
+	   - "runtimeExecutable": "nodemon"
+	   - "console": "integratedTerminal"
    
 3. In terminal write:
 
-   - npm install nodemon -g (Windows)   
-   - sudo npm install nodemon -g (Mac and Linux) 
+	   - npm install nodemon -g (Windows)   
+	   - sudo npm install nodemon -g (Mac and Linux) 
    
 
 ### 2. *INSTALLING Express.js* 
 
 - For installation it is necessary to run the following command through the terminal:
 
-  1. npm install --save express
+	  1. npm install --save express
   
 - Do some changes in app.js:
 
-  1. const  express = require('express');
+	  1. const  express = require('express');
 
-  2. const  app = express();
- 
+	  2. const  app = express();
+	 
   
 ### 3. *PARSING INCOMING REQUESTS*
  
@@ -52,9 +56,9 @@
   
   2. Add some changes in app.js:
      
-	 - const bodyParser = require('body-parser');
+		 - const bodyParser = require('body-parser');
 
-     - app.use(bodyParser.json());
+		 - app.use(bodyParser.json());
 	 
 
 ### 4. *WORKING WITH ENVIRONMENT VARIABLES*
